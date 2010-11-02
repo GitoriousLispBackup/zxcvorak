@@ -1,0 +1,104 @@
+// $XKeyboardConfig$
+
+// based on us-dvorak but heavily modified
+
+// Copyright Abhishek Reddy, 2010
+
+// Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+// THE SOFTWARE IS PROVIDED "AS IS" AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.)
+
+default
+partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    name[Group1]="USA - zxcvorak";
+
+    key <BKSL> { [ backslash, bar ] };
+    key <TLDE> { [ grave, asciitilde, dead_grave, dead_tilde ] };
+
+    key <AE01> { [ 1, exclam ] };
+    key <AE02> { [ 2, at ] };
+    key <AE03> { [ 3, numbersign ] };
+    key <AE04> { [ 4, dollar ] };
+    key <AE05> { [ 5, percent ] };
+    key <AE06> { [ 6, asciicircum, dead_circumflex, dead_circumflex ] };
+    key <AE07> { [ 7, ampersand ] };
+    key <AE08> { [ 8, asterisk ] };
+    key <AE09> { [ 9, parenleft, dead_grave] };
+    key <AE10> { [ 0, parenright ] };
+    key <AE11> { [ bracketleft,	braceleft ] };
+    key <AE12> { [ bracketright, braceright,  dead_tilde] };
+
+    key <AD01> { [ apostrophe, quotedbl, dead_acute, dead_diaeresis ] };
+    key <AD02> { [ comma, less, dead_cedilla, dead_caron ] };
+    key <AD03> { [ period, greater, dead_abovedot, periodcentered ] };
+
+    key <AD04> { [ g, G ] };
+    key <AD05> { [ f, F ] };
+    key <AD06> { [ y, Y ] };
+    key <AD07> { [ p, P ] };
+    key <AD08> { [ k, K ] };
+    key <AD09> { [ r, R ] };
+    key <AD10> { [ l, L ] };
+    key <AD11> { [ semicolon, colon ] };
+    key <AD12> { [ equal, plus ] };
+
+    key <AC01> { [ a, A ] };
+    key <AC02> { [ o, O ] };
+    key <AC03> { [ e, E ] };
+    key <AC04> { [ u, U ] };
+    key <AC05> { [ i, I ] };
+    key <AC06> { [ d, D ] };
+    key <AC07> { [ h, H ] };
+    key <AC08> { [ t, T ] };
+    key <AC09> { [ n, N ] };
+    key <AC10> { [ s, S ] };
+    key <AC11> { [ minus, underscore ] };
+
+    key <AB01> { [ z, Z ] };
+    key <AB02> { [ x, X ] };
+    key <AB03> { [ c, C ] };
+    key <AB04> { [ v, V ] };
+    key <AB05> { [ b, B ] };
+    key <AB06> { [ q, Q ] };
+    key <AB07> { [ m, M ] };
+    key <AB08> { [ w, W ] };
+    key <AB09> { [ j, J ] };
+    key <AB10> { [ slash, question, dead_ogonek, dead_doubleacute ] };
+};
+
+partial alphanumeric_keys
+xkb_symbols "hack" {
+    include "zxcvorak(basic)"
+
+    name[Group1]="USA - zxcvorak for hacking";
+
+    key <BKSL> { [ braceleft, bar ] };
+    key <TLDE> { [ braceright, asciitilde, dead_grave, dead_tilde ] };
+
+    key <AE01> { [ 1, exclam ] };
+    key <AE02> { [ 2, at ] };
+    key <AE03> { [ 3, numbersign ] };
+    key <AE04> { [ 4, dollar ] };
+    key <AE05> { [ 5, percent ] };
+    key <AE06> { [ 6, asciicircum, dead_circumflex, dead_circumflex ] };
+    key <AE07> { [ 7, ampersand ] };
+    key <AE08> { [ 8, asterisk ] };
+    key <AE09> { [ 9, grave ] };
+    key <AE10> { [ 0, question ] };
+    key <AE11> { [ bracketleft, underscore ] };
+    key <AE12> { [ bracketright, plus ] };
+
+    key <AD01> { [ apostrophe, quotedbl, dead_acute, dead_diaeresis ] };
+    key <AD02> { [ comma, less, dead_cedilla, dead_caron ] };
+    key <AD03> { [ period, greater, dead_abovedot, periodcentered ] };
+
+    key <AD11> { [ parenleft, colon ] };
+    key <AD12> { [ parenright, equal ] };
+
+    key <AC11> { [ minus, semicolon ] };
+
+    key <AB10> { [ slash, backslash, dead_ogonek, dead_doubleacute ] };
+};
+

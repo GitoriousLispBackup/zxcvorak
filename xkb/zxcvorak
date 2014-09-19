@@ -59,8 +59,8 @@ xkb_symbols "basic" {
     key <AC03> { [ e, E ] };
     key <AC04> { [ u, U ] };
     key <AC05> { [ i, I ] };
-    key <AC06> { [ d, D ] };
-    key <AC07> { [ h, H ] };
+    key <AC06> { [ h, H ] };
+    key <AC07> { [ d, D ] };
     key <AC08> { [ t, T ] };
     key <AC09> { [ n, N ] };
     key <AC10> { [ s, S ] };

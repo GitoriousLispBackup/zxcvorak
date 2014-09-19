@@ -80,7 +80,7 @@ INSTALL
     
     </xkbConfigRegistry>
 
-Note: You may only need to add the XML snipped to one of the two files, depending
+Note: You may only need to add the XML snippet to one of the two files, depending
 on how your keyboard is installed in X11 and what driver it uses.
 
 

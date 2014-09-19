@@ -83,6 +83,12 @@ INSTALL
 Note: You may only need to add the XML snippet to one of the two files, depending
 on how your keyboard is installed in X11 and what driver it uses.
 
+* Now you can enable a zxcvorak layout in your desktop environment via its settings utility.
+
+* To enable the zxcvorak layout glabally in the login manager, edit its Xsetup script to invoke `setxkbmap zxcvorak`. For example, for KDM, edit `/etc/kde4/kdm/Xsetup` and append:
+    [ -f /usr/share/X11/xkb/symbols/zxcvorak ] && setxkbmap zxcvorak
+
+
 
 WARNING: XKB
 ============
